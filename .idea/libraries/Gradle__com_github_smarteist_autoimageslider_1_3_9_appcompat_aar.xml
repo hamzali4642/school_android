@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.smarteist:autoimageslider:1.3.9-appcompat@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/autoimageslider-1.3.9-appcompat.aar/6b7b39d0a3364dc1b22952b7c61e0675/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/autoimageslider-1.3.9-appcompat.aar/6b7b39d0a3364dc1b22952b7c61e0675/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/autoimageslider-1.3.9-appcompat.aar/6b7b39d0a3364dc1b22952b7c61e0675/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.smarteist/autoimageslider/1.3.9-appcompat/f7b1cdc0793c143a874df41299ff7ccd8c52e43f/autoimageslider-1.3.9-appcompat-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.smarteist/autoimageslider/1.3.9-appcompat/ff711ecdb447013106b1eba445e3bc391f9b247/autoimageslider-1.3.9-appcompat-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
