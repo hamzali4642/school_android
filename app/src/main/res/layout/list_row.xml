@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+android:id="@+id/adapter_student_exam_schedule_exam_list"
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    style="@style/CustomCardView">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/headLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:background="@color/grey">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.2"
+                android:layout_marginStart="5dp"
+                android:textSize="@dimen/primaryText"
+                android:gravity="start|center"
+                android:padding="10dp"
+                android:text="@string/AppliedDate"
+                android:textStyle="bold"
+                android:textColor="@color/textHeading" />
+
+            <TextView
+                android:id="@+id/date_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_weight="0.8"
+                android:text="12-12-2020 11:22:33"
+                android:textSize="@dimen/secondaryText"
+                android:gravity="end"
+                android:textColor="@color/textHeading"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginBottom="10dp"
+            android:baselineAligned="false"
+            android:orientation="vertical"
+            android:layout_below="@+id/headLayout"
+            android:padding="5dp">
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fromDate"
+                        android:textColor="@color/textHeading"
+                        android:textSize="@dimen/secondaryText"
+                        />
+
+            </LinearLayout>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>
+
