@@ -22,6 +22,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -48,6 +49,7 @@ import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.qdocs.smartschool.AboutSchool;
 import com.qdocs.smartschool.Login;
+import com.qdocs.smartschool.NewActivity;
 import com.qdocs.smartschool.R;
 import com.qdocs.smartschool.TakeUrl;
 import com.qdocs.smartschool.adapters.LoginChildListAdapter;
@@ -84,6 +86,8 @@ import javax.crypto.SecretKey;
 import static android.view.Gravity.START;
 
 public class StudentDashboard extends AppCompatActivity {
+
+    ImageView homework,fee,timeTable,lessonplan,attendance,examination,notice,result,home;
 
     private static final int PERMISSION_CALLBACK_CONSTANT = 100;
     private static final int REQUEST_PERMISSION_SETTING = 101;
@@ -125,7 +129,7 @@ public class StudentDashboard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.student_dashboard_activity);
+        setContentView(R.layout.dashbard_new_view);
 
         drawerIndicator = findViewById(R.id.drawer_indicator);
         actionBar = findViewById(R.id.actionBar);
@@ -135,6 +139,97 @@ public class StudentDashboard extends AppCompatActivity {
         actionBarLogo = findViewById(R.id.actionBar_logo);
       //chatBtn = findViewById(R.id.chatBtn);
        notification_alert = findViewById(R.id.notification_alert);
+
+        home=findViewById(R.id.imageStudyMaterial);
+        homework=findViewById(R.id.imageAssignments);
+        examination=findViewById(R.id.imageAcademics);
+        notice=findViewById(R.id.imageExamSyllabus);
+        fee=findViewById(R.id.imageTransport);
+        lessonplan=findViewById(R.id.imageFee);
+        timeTable=findViewById(R.id.imageTimeTable);
+        result=findViewById(R.id.imageMarksAnalysis);
+        attendance=findViewById(R.id.imageAttendance);
+
+        homework.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(StudentDashboard.this, StudentHomework.class);
+                intent.putExtra("i",1);
+                startActivity(intent);
+            }
+        });
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(StudentDashboard.this, StudentDownloads.class);
+                intent.putExtra("i",2);
+                startActivity(intent);
+            }
+        });
+
+        fee.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent=new Intent(StudentDashboard.this, StudentFees.class);
+                intent.putExtra("i",3);
+                startActivity(intent);
+            }
+        });
+
+        examination.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(StudentDashboard.this, StudentExaminationList.class);
+                intent.putExtra("i",4);
+                startActivity(intent);
+            }
+        });
+
+        notice.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(StudentDashboard.this, StudentNoticeBoard.class);
+                intent.putExtra("i",5);
+                startActivity(intent);
+            }
+        });
+        attendance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(StudentDashboard.this, StudentAttendance.class);
+                intent.putExtra("i",6);
+                startActivity(intent);
+            }
+        });
+        timeTable.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(StudentDashboard.this, StudentClassTimetable.class);
+                intent.putExtra("i",7);
+                startActivity(intent);
+            }
+        });
+        result.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(StudentDashboard.this, StudentTransportRoutes.class);
+                intent.putExtra("i",8);
+                startActivity(intent);
+            }
+        });
+        lessonplan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(StudentDashboard.this, StudentTeachersList.class);
+                intent.putExtra("i",9);
+                startActivity(intent);
+            }
+        });
+
 
         prepareNavList();
         setUpDrawer();
@@ -186,43 +281,6 @@ public class StudentDashboard extends AppCompatActivity {
 
 
         viewContainer = findViewById(R.id.studentDashboard_frame);
-        bottomNavigation = (BottomNavigationView) findViewById(R.id.navigation);
-
-        bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-
-                switch (item.getItemId()) {
-
-                    case R.id.navigation_home:
-                        loadFragment(new StudentDashboardFragment());
-                        drawer.closeDrawer(START);
-                        return true;
-
-                    case R.id.navigation_homework:
-                        loadFragment(new StudentDashboardHomeWork());
-                        drawer.closeDrawer(START);
-                        return true;
-
-                    case R.id.navigation_fees:
-                        loadFragment(new StudentDashboardFees());
-                        drawer.closeDrawer(START);
-                        return true;
-
-                    case R.id.navigation_noticeBoard:
-                        loadFragment(new StudentDashboardAttendance());
-                        drawer.closeDrawer(START);
-                        return true;
-
-                    case R.id.navigation_reportCard:
-                        loadFragment(new StudentDashboardReportCard());
-                        drawer.closeDrawer(START);
-                        return true;
-                }
-                return false;
-            }
-        });
-        loadFragment(new StudentDashboardFragment());
     }
 
     @Override
@@ -397,7 +455,7 @@ public class StudentDashboard extends AppCompatActivity {
                                 moduleCodeList.add(modulesJson.getJSONObject(i).getString("short_code"));
                                 moduleStatusList.add(modulesJson.getJSONObject(i).getString("status"));
                             }
-                            setMenu(navigationView.getMenu(), bottomNavigation.getMenu());
+//                            setMenu(navigationView.getMenu(), bottomNavigation.getMenu());
                         } else {
                             Toast.makeText(getApplicationContext(), object.getString("errorMsg"), Toast.LENGTH_SHORT).show();
                         }
@@ -528,7 +586,7 @@ public class StudentDashboard extends AppCompatActivity {
             childDetailsTV.setVisibility(View.GONE);
         }
 
-        actionBar.setBackgroundColor(Color.parseColor(Utility.getSharedPreferences(getApplicationContext(), Constants.primaryColour)));
+//        actionBar.setBackgroundColor(Color.parseColor(Utility.getSharedPreferences(getApplicationContext(), Constants.primaryColour)));
 
         drawerHead.setBackgroundColor(Color.parseColor(Utility.getSharedPreferences(getApplicationContext(), Constants.secondaryColour)));
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

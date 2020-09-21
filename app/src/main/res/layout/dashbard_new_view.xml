@@ -4,241 +4,15 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-    <LinearLayout
-        android:layout_alignParentBottom="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:weightSum="3"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginBottom="20dp"
-        android:orientation="vertical">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:id="@+id/noticeid"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="10dp"
-                    android:tint="@color/newgreen"
-                    android:src="@drawable/web"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="20sp"
-                    android:textColor="@color/newgreen"
-                    android:textStyle="bold"
-                    android:text="Notice"/>
-
-            </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:id="@+id/examinationid"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="10dp"
-                    android:tint="@color/newgreen"
-                    android:src="@drawable/exam"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/newgreen"
-                    android:text="Examination"/>
-
-            </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-        </LinearLayout>
-
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:id="@+id/homeworkid"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="10dp"
-                    android:tint="@color/newgreen"
-                    android:src="@drawable/homework"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="20sp"
-                    android:textColor="@color/newgreen"
-                    android:textStyle="bold"
-                    android:text="Homework"/>
-
-            </LinearLayout>
-
-        </android.support.v7.widget.CardView>
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:layout_marginLeft="5dp"
-                android:id="@+id/feeid"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_weight="1">
-
-        <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="10dp"
-                    android:tint="@color/newgreen"
-                    android:src="@drawable/money"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/newgreen"
-                    android:text="Fee"/>
-
-            </LinearLayout>
-
-            </android.support.v7.widget.CardView>
-
-        </LinearLayout>
-
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="1">
-
-            <android.support.v7.widget.CardView
-                android:layout_width="0dp"
-                android:id="@+id/homeid"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                android:layout_gravity="center"
-                android:layout_height="wrap_content"
-                app:cardCornerRadius="10dp"
-                android:layout_weight="1">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:orientation="vertical"
-                android:gravity="center"
-                android:padding="10dp"
-                android:layout_height="wrap_content">
-
-                <ImageView
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_margin="10dp"
-                    android:tint="@color/newgreen"
-                    android:textColor="@color/newgreen"
-                    android:src="@drawable/home"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:text="Home"/>
-
-            </LinearLayout>
-            </android.support.v7.widget.CardView>
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-
-
-
     <FrameLayout
         android:id="@+id/actionBar"
-        android:background="@color/newgreen"
         android:layout_width="match_parent"
-        android:layout_height="56dp">
+        android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="fill_parent"
             android:layout_height="56dp"
+            android:background="@color/colorPrimary"
             android:gravity="center_vertical">
 
             <ImageView
@@ -250,6 +24,7 @@
                 android:layout_gravity="start" />
 
             <ImageView
+
                 android:id="@+id/actionBar_logo"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -258,10 +33,11 @@
                 android:minWidth="150dp"
                 android:minHeight="30dp"
                 android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
                 android:layout_marginStart="10dp"
-                android:layout_toEndOf="@+id/drawer_indicator"
                 android:scaleType="fitStart"
                 android:adjustViewBounds="true" />
+
 
             <!--<LinearLayout
                 android:id="@+id/chatBtn"
@@ -296,7 +72,6 @@
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:clipToPadding="false"
-
                 android:focusable="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="15dp"
@@ -328,37 +103,327 @@
 
     </FrameLayout>
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/actionBar"
-        app:cardCornerRadius="20dp"
-        android:layout_marginHorizontal="5dp"
-        android:layout_marginVertical="30dp"
-        android:elevation="5dp">
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <ImageView
-            android:id="@+id/imageSlider"
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:src="@drawable/slider1"
-            android:scaleType="centerCrop"
-            />
-        </LinearLayout>
-    </android.support.v7.widget.CardView>
 
     <android.support.v4.widget.DrawerLayout
         android:id="@+id/drawer_layout"
+        android:layout_below="@+id/actionBar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_height="match_parent"
+       >
 
         <FrameLayout
             android:id="@+id/studentDashboard_frame"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/teacher_toolbar">
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:id="@+id/StudentInformationLayout"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@drawable/student_banner"
+                    android:elevation="4dp"
+                    android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                    app:layout_constraintBottom_toTopOf="@id/vertical_student_guidline"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@color/cardview_light_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/vertical_student_guidline"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="#E0E0E0"
+                        app:layout_constraintStart_toEndOf="@id/childVertical1" />
+
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:background="#E0E0E0"
+                        app:layout_constraintEnd_toStartOf="@id/childVertical2" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#E0E0E0"
+                        app:layout_constraintTop_toBottomOf="@id/childHorizontal1" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#E0E0E0"
+                        app:layout_constraintBottom_toTopOf="@id/childHorizontal2" />
+
+                    <ImageView
+                        android:id="@+id/imageAttendance"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toTopOf="@id/attendance"
+                        app:layout_constraintEnd_toStartOf="@id/childVertical1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0"
+                        app:srcCompat="@drawable/attendance" />
+
+                    <ImageView
+                        android:id="@+id/imageAcademics"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toTopOf="@id/academics"
+                        app:layout_constraintEnd_toStartOf="@id/childVertical2"
+                        app:layout_constraintStart_toEndOf="@id/childVertical1"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/exam" />
+
+                    <ImageView
+                        android:id="@+id/imageTimeTable"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintBottom_toTopOf="@id/daily_time_table"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/childVertical2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/daily_time_table" />
+
+                    <TextView
+                        android:id="@+id/attendance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Attendance"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@id/childHorizontal1"
+                        app:layout_constraintEnd_toEndOf="@+id/imageAttendance"
+                        app:layout_constraintStart_toStartOf="@+id/imageAttendance"
+                        app:layout_constraintTop_toBottomOf="@+id/imageAttendance" />
+
+                    <TextView
+                        android:id="@+id/academics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Examination"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@id/childHorizontal1"
+                        app:layout_constraintEnd_toEndOf="@+id/imageAcademics"
+                        app:layout_constraintStart_toStartOf="@+id/imageAcademics"
+                        app:layout_constraintTop_toBottomOf="@+id/imageAcademics" />
+
+                    <TextView
+                        android:id="@+id/daily_time_table"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Time Table"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@id/childHorizontal1"
+                        app:layout_constraintEnd_toEndOf="@+id/imageTimeTable"
+                        app:layout_constraintStart_toStartOf="@+id/imageTimeTable"
+                        app:layout_constraintTop_toBottomOf="@+id/imageTimeTable" />
+
+                    <ImageView
+                        android:id="@+id/imageExamSyllabus"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toTopOf="@id/exam_syllabus"
+                        app:layout_constraintEnd_toStartOf="@id/childVertical1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/childHorizontal1"
+                        app:srcCompat="@drawable/exam_syllabus" />
+
+                    <ImageView
+                        android:id="@+id/imageMarksAnalysis"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toTopOf="@id/marksAnalysis"
+                        app:layout_constraintEnd_toStartOf="@+id/childVertical2"
+                        app:layout_constraintStart_toEndOf="@id/childVertical1"
+                        app:layout_constraintTop_toBottomOf="@+id/childHorizontal1"
+                        app:srcCompat="@drawable/bus" />
+
+                    <ImageView
+                        android:id="@+id/imageAssignments"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toTopOf="@id/assignments"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/childVertical2"
+                        app:layout_constraintTop_toBottomOf="@id/childHorizontal1"
+                        app:srcCompat="@drawable/assignments" />
+
+                    <TextView
+                        android:id="@+id/exam_syllabus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Notice"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@id/childHorizontal2"
+                        app:layout_constraintEnd_toEndOf="@+id/imageExamSyllabus"
+                        app:layout_constraintStart_toStartOf="@+id/imageExamSyllabus"
+                        app:layout_constraintTop_toBottomOf="@+id/imageExamSyllabus" />
+
+                    <TextView
+                        android:id="@+id/marksAnalysis"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/transportRoute"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@id/childHorizontal2"
+                        app:layout_constraintEnd_toEndOf="@+id/imageMarksAnalysis"
+                        app:layout_constraintStart_toStartOf="@+id/imageMarksAnalysis"
+                        app:layout_constraintTop_toBottomOf="@+id/imageMarksAnalysis" />
+
+                    <TextView
+                        android:id="@+id/assignments"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Homework"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toTopOf="@id/childHorizontal2"
+                        app:layout_constraintEnd_toEndOf="@+id/imageAssignments"
+                        app:layout_constraintStart_toStartOf="@+id/imageAssignments"
+                        app:layout_constraintTop_toBottomOf="@+id/imageAssignments" />
+
+                    <ImageView
+                        android:id="@+id/imageStudyMaterial"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toTopOf="@id/study_material"
+                        app:layout_constraintEnd_toStartOf="@id/childVertical1"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/childHorizontal2"
+                        app:srcCompat="@drawable/study_material" />
+
+                    <ImageView
+                        android:id="@+id/imageTransport"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintBottom_toTopOf="@id/transport"
+                        app:layout_constraintEnd_toStartOf="@id/childVertical2"
+                        app:layout_constraintStart_toEndOf="@id/childVertical1"
+                        app:layout_constraintTop_toBottomOf="@+id/childHorizontal2"
+                        app:srcCompat="@drawable/fee" />
+
+                    <ImageView
+                        android:id="@+id/imageFee"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toTopOf="@id/fee"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/childVertical2"
+                        app:layout_constraintTop_toBottomOf="@+id/childHorizontal2"
+                        app:srcCompat="@drawable/teacher_routine" />
+
+                    <TextView
+                        android:id="@+id/study_material"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Study Material"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageStudyMaterial"
+                        app:layout_constraintStart_toStartOf="@+id/imageStudyMaterial"
+                        app:layout_constraintTop_toBottomOf="@+id/imageStudyMaterial" />
+
+                    <TextView
+                        android:id="@+id/transport"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Fee"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageTransport"
+                        app:layout_constraintStart_toStartOf="@+id/imageTransport"
+                        app:layout_constraintTop_toBottomOf="@+id/imageTransport" />
+
+                    <TextView
+                        android:id="@+id/fee"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teachers"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="13sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/imageFee"
+                        app:layout_constraintStart_toStartOf="@+id/imageFee"
+                        app:layout_constraintTop_toBottomOf="@+id/imageFee" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/childVertical1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.33" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/childVertical2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_percent="0.67" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/childHorizontal1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.33" />
+
+                    <android.support.constraint.Guideline
+                        android:id="@+id/childHorizontal2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        app:layout_constraintGuide_percent="0.67" />
+                </android.support.constraint.ConstraintLayout>
+
+                <android.support.constraint.Guideline
+                    android:id="@+id/vertical_student_guidline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintGuide_percent="0.35" />
+
+            </android.support.constraint.ConstraintLayout>
+
 
         </FrameLayout>
 

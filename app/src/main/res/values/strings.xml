@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Smart School</string>
+    <string name="app_name">Mukabbir</string>
     <string name="empty"></string>
 
     <!--TAKE URL PAGE-->
@@ -166,7 +166,7 @@
     <string name="subtopics">Sub Topic</string>
     <string name="examresult">Exam Result</string>
     <string name="exam_schedule">Exam Schedule</string>
-        <string name="not_attempt">Not Attempted</string>
+    <string name="not_attempt">Not Attempted</string>
     <string name="correct">Correct</string>
     <string name="incorrect">Incorrect</string>
     <string name="hostelRoomType">Room Type</string>
@@ -321,7 +321,7 @@
     <string name="fromDateError"> The From Date field is required </string>
     <string name="toDateError"> The To Date field is required </string>
     <string name="toDate">To Date</string>
-        <string name="editLeave"> Edit Leave </string>
+    <string name="editLeave"> Edit Leave </string>
     <!--LEAVE-->
 
 
